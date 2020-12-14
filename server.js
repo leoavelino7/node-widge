@@ -9,4 +9,8 @@ app.get('/chat/:token.js', function(req, res) {
     res.sendFile(__dirname + "/file.js");
 });
 
+app.get('/', function(req, res) {
+    res.sendFile(__dirname + "/index.html");
+});
+
 app.listen(6060);
